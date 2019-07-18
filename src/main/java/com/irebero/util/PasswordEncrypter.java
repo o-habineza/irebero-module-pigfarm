@@ -8,8 +8,6 @@ import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import static org.apache.tomcat.util.buf.HexUtils.toHexString;
 
 /**
@@ -45,7 +43,7 @@ public class PasswordEncrypter {
      */
     public static String generateSalt() throws NoSuchAlgorithmException {
         byte[] salt = null;
-        salt = "itdc@SYS=2".getBytes();
+        salt = "Mysql$$@2012!!".getBytes();
         return toHexString(salt);
     }
 }

@@ -15,7 +15,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @AutoConfigureTestDatabase(replace=Replace.NONE)
 public class IreberoPigfarmModuleApplicationTests {
 
-    @Autowired
+	@Autowired
     private DataSource dataSource;
 
     @Test
